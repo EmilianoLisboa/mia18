@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#b3123b" />
+  <title>Feliz 18 Anos, Mia❣️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= TELA DE ABERTURA ================= -->
+  <div id="introScreen" class="intro-screen">
+    <div class="intro-particles" id="introParticles"></div>
+    <div class="intro-content">
+      <div class="heart-pulse">❤️</div>
+      <h1 class="intro-title">Tenho uma surpresa para ti, <span class="highlight">Mia❣️</span></h1>
+      <p class="intro-sub">Antes de continuar, coloca o teu coração aqui...</p>
+      <button id="openSurpriseBtn" class="btn btn-primary glow-btn">
+        ABRIR A MINHA SURPRESA ❤️
+      </button>
+    </div>
+  </div>
+
+  <!-- Botão para ativar música caso autoplay seja bloqueado -->
+  <button id="enableMusicBtn" class="enable-music-btn hidden">🎵 Ativar a nossa música</button>
+
+  <!-- ================= BOTÕES FLUTUANTES ================= -->
+  <div class="floating-controls">
+    <button id="musicToggle" class="floating-btn" title="Música" aria-label="Música">🎵</button>
+    <button id="themeToggle" class="floating-btn" title="Modo" aria-label="Modo escuro/claro">🌙</button>
+  </div>
+
+  <!-- ================= ÁUDIO ================= -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="assets/audio/Feliz_Aniversário!_🎂_Happy_Birthday_Song!_🎶(256k).mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- ================= TELA DE PIN ================= -->
+<div id="pinScreen" class="pin-screen hidden">
+  <div class="pin-content">
+    <div class="pin-lock"></div>
+    <h2 class="pin-title">Só tu podes entrar, <span class="script">Mia❣️</span></h2>
+    <p class="pin-sub">Digita o seu PIN secreto:</p>
+    <div class="pin-input-wrap">
+      <input type="password" id="pinInput" maxlength="4" inputmode="numeric" pattern="[0-9]*" placeholder="••••" />
+    </div>
+    <button id="pinSubmit" class="btn btn-primary">Desbloquear ❤️</button>
+    <p class="pin-error hidden" id="pinError">Hmm... não é esse. Tenta um outro ❤️</p>
+  </div>
+</div>
+
+  <!-- ================= CONTEÚDO PRINCIPAL ================= -->
+  <main id="mainSite" class="main-site hidden">
+
+    <!-- ---------- HERO ---------- -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-particles" id="heroParticles"></div>
+      <div class="hero-content fade-in">
+        <p class="hero-eyebrow">18 Anos Dela ❤️ &nbsp;•&nbsp; 4 Anos De Nós ❤️</p>
+        <h1 class="hero-title">
+          Feliz <span class="num">18º</span> Aniversário,<br/>
+          <span class="script">Mia❣️</span>
+        </h1>
+        <p class="hero-sub">Hoje o mundo celebra o teu nascimento.<br/>Eu celebro a sorte de ter-te encontrado.</p>
+
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-glow"></div>
+          <div class="hero-photo">
+            <img src="assets/images/principal.jpg" alt="Mia" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22><rect fill=%22%23f8c8d4%22 width=%22400%22 height=%22400%22/><text x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22%23b3123b%22 text-anchor=%22middle%22 dy=%22.3em%22>Coloca foto-principal.jpg</text></svg>'"/>
+          </div>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num" id="ageCounter">0</span><span class="stat-label">anos de uma pessoa incrível</span></div>
+          <div class="stat"><span class="stat-num">4</span><span class="stat-label">anos de nós ❤️</span></div>
+        </div>
+
+        <p class="hero-quote">"Que o teu sorriso continue iluminando todos os lugares por onde passares."</p>
+      </div>
+    </section>
+
+    <!-- ---------- CARTA DE AMOR ---------- -->
+    <section class="section letter-section" id="letterSection">
+      <h2 class="section-title">Uma carta para ti, <span class="script">Mia❣️</span></h2>
+      <div class="letter-card reveal">
+        <div class="letter-header">
+          <div class="wax-seal">E&D</div>
+        </div>
+        <div class="letter-body" id="letterBody" data-text="Meu amor,
+
+Hoje completas 18 anos, e eu não poderia deixar este dia passar sem te lembrar do quanto és especial para mim.
+
+Há 4 anos começámos a escrever a nossa história. Foram anos de sorrisos, conversas, saudades, momentos bons, momentos difíceis e muito aprendizado.
+
+Tu és uma mulher linda, fofinha, calma e inteligente. Tens um sorriso capaz de mudar completamente o meu dia e uma energia contagiante que torna tudo mais leve quando estou contigo.
+
+Admiro também a tua força. Mesmo quando as coisas não são fáceis, existe em ti uma força que me faz admirar-te ainda mais.
+
+A distância entre nós ensinou-me que amar alguém não significa estar sempre perto fisicamente. Às vezes significa sentir saudades, esperar por uma chamada, contar os dias para nos encontrarmos e continuar escolhendo a mesma pessoa mesmo quando existem quilómetros pelo caminho.
+
+Hoje, entre Sumbe, Waco-Cungo e Huambo, existem muitos quilómetros. Mas nenhum deles conseguiu apagar aquilo que construímos nestes 4 anos.
+
+Hoje começa uma nova fase da tua vida.
+
+Desejo que os teus 18 anos tragam sonhos realizados, felicidade, saúde, sabedoria e muitas conquistas.
+
+E espero poder continuar a acompanhar-te, apoiando-te, vendo-te crescer e celebrando contigo cada vitória.
+
+Obrigado por estes 4 anos.
+
+Obrigado por seres tu.
+
+Feliz 18º aniversário, minha linda.
+
+Que o teu sorriso nunca perca essa luz que tanto amo.
+
+Se pudesse escolher novamente, entre todas as pessoas do mundo, escolheria conhecer-te outra vez-mesmo sabendo que teríamos de emfrentar a distância ❤️">
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- CARROSSEL ---------- -->
+    <section class="section carousel-section" id="gallery">
+      <h2 class="section-title">Feliz aniversário AMOR ❤️</h2>
+      <div class="carousel reveal">
+        <div class="carousel-track" id="carouselTrack">
+          <!-- slides preenchidos via JS -->
+        </div>
+        <button class="carousel-btn prev" id="carouselPrev">‹</button>
+        <button class="carousel-btn next" id="carouselNext">›</button>
+        <div class="carousel-indicators" id="carouselIndicators"></div>
+      </div>
+    </section>
+
+    <!-- ---------- TIMELINE ---------- -->
+    <section class="section timeline-section" id="timeline">
+      <h2 class="section-title">4 anos da nossa história</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-num">01</span>
+            <h3>O começo ❤️</h3>
+            <p>Quando duas pessoas se encontraram e começaram uma história que ninguém imaginava que chegaria tão longe.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-num">02</span>
+            <h3>Os primeiros momentos ❤️</h3>
+            <p>Vieram as conversas, os sorrisos, as brincadeiras e as primeiras memórias.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-num">03</span>
+            <h3>A distância 🌍</h3>
+            <p>Sumbe, Waco-Cungo e Huambo passaram a fazer parte da nossa história.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-num">04</span>
+            <h3>Hoje ❤️</h3>
+            <p>4 anos depois, estamos aqui celebrando os teus 18 anos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- DISTÂNCIA ---------- -->
+    <section class="section distance-section" id="distance">
+      <h2 class="section-title">A nossa distância <i class="bi bi-geo-alt"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                      </svg></h2>
+      <p class="distance-quote reveal">"Entre Sumbe, Waco-Cungo e Huambo existem quilómetros, mas nenhum quilómetro foi capaz de apagar o nosso amor."</p>
+
+      <div class="distance-map reveal">
+        <svg viewBox="0 0 400 420" class="angola-map" aria-hidden="true">
+          <path class="angola-path" d="M90,120 Q70,90 120,70 L200,55 Q250,45 290,70 L320,110 Q340,150 330,200 L340,250 Q345,300 320,340 L280,370 Q240,385 200,375 L150,365 Q110,350 95,310 L80,260 Q70,200 80,160 Z" />
+        </svg>
+
+        <div class="map-point point-huambo">
+          <span class="dot"></span>
+          <span class="label">HUAMBO ❤️</span>
+        </div>
+        <div class="map-point point-waco">
+          <span class="dot"></span>
+          <span class="label">WACO-CUNGO ❤️</span>
+        </div>
+        <div class="map-point point-sumbe">
+          <span class="dot"></span>
+          <span class="label">SUMBE ❤️</span>
+        </div>
+
+        <div class="flying-heart">❤️</div>
+
+        <div class="distance-center">
+          <p>Quilómetros entre nós.<br/><strong>Amor dentro de nós.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- POR QUE EU TE AMO ---------- -->
+    <section class="section why-love-section" id="whyLove">
+      <h2 class="section-title">Por que eu te amo? 💕</h2>
+      <div class="cards-grid">
+        <div class="love-card reveal">
+          <div class="card-icon">❤️</div>
+          <h3>Pelo teu sorriso</h3>
+          <p>Porque quando sorris, parece que o meu dia fica automaticamente melhor.</p>
+        </div>
+        <div class="love-card reveal">
+          <div class="card-icon">🧠</div>
+          <h3>Pela tua inteligência</h3>
+          <p>Admiro a forma como pensas, aprendes e enxergas as coisas.</p>
+        </div>
+        <div class="love-card reveal">
+          <div class="card-icon">🌸</div>
+          <h3>Pelo teu jeito fofinho</h3>
+          <p>Existe uma ternura em ti que me faz querer estar sempre perto.</p>
+        </div>
+        <div class="love-card reveal">
+          <div class="card-icon">🌙</div>
+          <h3>Pela tua calma</h3>
+          <p>O teu jeito tranquilo consegue trazer paz até nos dias difíceis.</p>
+        </div>
+        <div class="love-card reveal">
+          <div class="card-icon">🔥</div>
+          <h3>Pela tua força</h3>
+          <p>Admiro a mulher forte que existe dentro de ti.</p>
+        </div>
+        <div class="love-card reveal">
+          <div class="card-icon">✨</div>
+          <h3>Pela tua energia</h3>
+          <p>A tua energia contagiante transforma momentos simples em memórias especiais.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- MÚSICA ---------- -->
+    <section class="section music-section" id="musicSection">
+      <h2 class="section-title">Trilha sonora 🎵❤️</h2>
+      <div class="music-player reveal">
+        <div class="music-visual">
+          <div class="vinyl">💿</div>
+          <div class="waveform" id="waveform">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="music-controls">
+          <button id="playPauseBtn" class="player-btn">▶</button>
+          <div class="progress-wrap">
+            <input type="range" id="progressBar" min="0" max="100" value="0" />
+            <div class="time-row">
+              <span id="currentTime">0:00</span>
+              <span id="duration">0:00</span>
+            </div>
+          </div>
+          <div class="volume-wrap">
+            🔊 <input type="range" id="volumeBar" min="0" max="1" step="0.01" value="0.6" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- CAIXA DE SURPRESAS ---------- -->
+    <section class="section envelopes-section" id="envelopes">
+      <h2 class="section-title">Tenho algumas coisas para te dizer...</h2>
+      <div class="envelopes-grid">
+        <div class="envelope reveal" data-message="Quando sentires a minha falta, fecha os olhos e lembra-te: em algum lugar, neste exato momento, alguém está a pensar em ti com o mesmo carinho. Eu estou aqui. Sempre. ❤️">
+          <div class="env-top"></div>
+          <div class="env-body">
+            <span class="env-label">Abra quando estiver com saudades ❤️</span>
+          </div>
+        </div>
+        <div class="envelope reveal" data-message="Ei, Mia! Sorri. Esse teu sorriso é a minha coisa preferida no mundo. Ele ilumina tudo. E hoje, mais do que nunca, quero que ele brilhe. 😊❤️">
+          <div class="env-top"></div>
+          <div class="env-body">
+            <span class="env-label">Abra quando precisares de um sorriso 😊</span>
+          </div>
+        </div>
+        <div class="envelope reveal" data-message="Deixa-me dizer-te uma coisa clara: és uma das pessoas mais importantes da minha vida. Não há distância, não há dia difícil que mude isso. Tu és essencial para mim. Sempre foste. Sempre serás.">
+          <div class="env-top"></div>
+          <div class="env-body">
+            <span class="env-label">Abra quando duvidares do quanto és importante para mim.</span>
+          </div>
+        </div>
+        <div class="envelope reveal" data-message="4 anos. 4 anos de nós. Lembra-te das conversas, dos risos, das chamadas, dos planos... Tudo isso é nosso. E é só o começo de algo muito maior. ❤️">
+          <div class="env-top"></div>
+          <div class="env-body">
+            <span class="env-label">Abra quando quiseres lembrar dos nossos 4 anos.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- 4 CARTAS ---------- -->
+    <section class="section letters4-section" id="letters4">
+      <h2 class="section-title">4 cartas para ti <i class="bi bi-envelope"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                      </svg></h2>
+      <div class="letters4-grid">
+        <div class="letter4 reveal" data-title="O nosso começo" data-text="Tudo começou de forma simples, quase sem aviso. E hoje olho para trás e vejo que foi ali, nesse pequeno momento, que a minha vida começou a mudar. Obrigado por teres dito sim ao nosso começo.">
+          <div class="letter4-seal"><i class="bi bi-envelope"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                      </svg></div>
+          <h3>O nosso começo</h3>
+        </div>
+        <div class="letter4 reveal" data-title="A distância" data-text="A distância ensinou-nos coisas que poucos casais aprendem. Ensinou-nos a esperar, a valorizar cada mensagem, cada chamada, cada reencontro. E mesmo com quilómetros, nunca deixámos de estar juntos.">
+          <div class="letter4-seal"><i class="bi bi-envelope"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                      </svg></div>
+          <h3>A distância</h3>
+        </div>
+        <div class="letter4 reveal" data-title="Quem tu és" data-text="Tu és luz. És calma. És força. És a pessoa mais doce que conheço. E cada dia que passa, admiro-te um pouco mais. Não pelo que fazes, mas por quem és.">
+          <div class="letter4-seal"><i class="bi bi-envelope"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                      </svg></div>
+          <h3>Quem tu és</h3>
+        </div>
+        <div class="letter4 reveal" data-title="O nosso futuro" data-text="Não sei tudo o que o futuro nos reserva. Mas sei que quero vivê-lo contigo. Quero ver-te realizar sonhos, quero estar ao teu lado nas vitórias e nas lutas. Quero continuar a escrever a nossa história.">
+          <div class="letter4-seal"><i class="bi bi-envelope"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                      </svg></div>
+          <h3>O nosso futuro</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- CONTADOR ---------- -->
+    <section class="section counter-section" id="counterSection">
+      <h2 class="section-title">Há quanto tempo somos nós?</h2>
+      <div class="counter-grid reveal">
+        <div class="counter-box"><span id="cYears">5</span><small>Anos</small></div>
+        <div class="counter-box"><span id="cMonths">0</span><small>Meses</small></div>
+        <div class="counter-box"><span id="cDays">0</span><small>Dias</small></div>
+        <div class="counter-box"><span id="cHours">0</span><small>Horas</small></div>
+        <div class="counter-box"><span id="cMinutes">0</span><small>Minutos</small></div>
+        <div class="counter-box"><span id="cSeconds">0</span><small>Segundos</small></div>
+      </div>
+      <p class="counter-tagline">4 anos de nós ❤️</p>
+    </section>
+
+    <!-- ---------- 18 COISAS ---------- -->
+    <section class="section things18-section" id="things18">
+      <h2 class="section-title">18 coisas que admiro em ti</h2>
+      <div class="things-grid">
+        <!-- Preenchido por JS -->
+      </div>
+    </section>
+
+    <!-- ---------- FUTURO ---------- -->
+    <section class="section future-section" id="future">
+      <div class="stars-bg" id="starsBg"></div>
+      <div class="future-content reveal">
+        <h2 class="section-title">Daqui para frente... 🌌</h2>
+        <p>Eu não sei exatamente onde a vida vai levar-nos.</p>
+        <p>Sei apenas que quero continuar a ver-te crescer, vencer, realizar os teus sonhos e encontrar motivos para sorrir.</p>
+        <p class="big">O futuro ainda está por escrever.</p>
+        <p>E talvez essa seja a parte mais bonita:</p>
+        <p class="big">Ainda temos muitas páginas para preencher.</p>
+      </div>
+    </section>
+
+    <!-- ---------- PROMESSA ---------- -->
+    <section class="section promise-section" id="promise">
+      <div class="promise-card reveal">
+        <div class="promise-ring">💍</div>
+        <h2 class="section-title">Uma promessa</h2>
+        <p>Não prometo que todos os dias serão perfeitos.</p>
+        <p>Prometo apenas valorizar aquilo que construímos, respeitar-te, apoiar os teus sonhos e continuar a cuidar das nossas memórias.</p>
+        <p>Porque 4 anos não são apenas tempo.</p>
+        <p class="promise-lines">
+          São histórias.<br/>
+          São momentos.<br/>
+          São escolhas.
+        </p>
+        <p class="promise-final">Somos nós. ❤️</p>
+      </div>
+    </section>
+
+    <!-- ---------- PRESENTE DIGITAL ---------- -->
+    <section class="section gift-section" id="gift">
+      <h2 class="section-title">Tenho um presente para ti 🎁</h2>
+      <button id="openGiftBtn" class="btn btn-primary glow-btn">🎁 Abrir o meu presente</button>
+    </section>
+
+    <!-- ---------- CELEBRAR ---------- -->
+    <section class="section celebrate-section" id="celebrate">
+      <button id="celebrateBtn" class="btn btn-celebrate">🎉 Celebrar os 18 anos!</button>
+    </section>
+
+    <!-- ---------- MENSAGEM FINAL ---------- -->
+    <section class="section final-section" id="finalMessage">
+      <div class="final-content reveal">
+        <h2 class="final-title">Feliz 18º aniversário,<br/><span class="script">Domiana Samuel — minha Mia❣️</span></h2>
+        <p>4 anos contigo foram apenas o começo.</p>
+        <p>E se depender de mim, ainda teremos muitas histórias para contar. ❤️</p>
+      </div>
+    </section>
+
+    <!-- ---------- FOOTER ---------- -->
+    <footer class="footer">
+      <p class="footer-main">Feito com amor por <strong>Emiliano Lisboa</strong> EM❤️I</p>
+      <p>Para <strong>Domiana Samuel — Mia❣️</strong></p>
+      <p class="footer-sub">18 anos dela. 4 anos de nós.</p>
+      <p class="footer-quote">"Se for para emagrecer, Que seja de conhecimento."</p>
+    </footer>
+  </main>
+
+  <!-- ================= MODAL ================= -->
+  <div class="modal hidden" id="modal">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">✕</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <!-- ================= GIFTS OVERLAY ================= -->
+  <div class="gift-overlay hidden" id="giftOverlay">
+    <div class="gift-box" id="giftBox">
+      <div class="gift-lid"></div>
+      <div class="gift-body"></div>
+      <div class="gift-ribbon-v"></div>
+      <div class="gift-ribbon-h"></div>
+    </div>
+    <div class="gift-message hidden" id="giftMessage">
+      <h2>Meu maior presente sempre foi ter-te na minha vida. ❤️</h2>
+      <h3 class="script">Feliz 18 anos, Mia❣️</h3>
+    </div>
+  </div>
+
+  <!-- ================= CONFETTI CANVAS ================= -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- ================= CELEBRATION MESSAGE ================= -->
+  <div class="celebration-message hidden" id="celebrationMessage">
+    <h1>PARABÉNS, MIA❣️</h1>
+    <p>18 ANOS! 🎂❤️</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
